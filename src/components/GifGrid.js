@@ -1,12 +1,13 @@
 import React from 'react';
 import { useFetchGifs } from '../hooks/useFetchGifs';
 import GifGridItem from './GifGridItem';
+import * as PropTypes from 'prop-types';
 
 const GitGrid = ({ category }) => {
   /*  const [images, setImages] = useState([]);
 
     useEffect(() => {
-      getGits(category).then((imgs) => {
+      GetGits(category).then((imgs) => {
         setImages(imgs);
       });
     }, [category]);*/
@@ -28,6 +29,10 @@ const GitGrid = ({ category }) => {
       </div>
     </>
   );
+};
+
+GitGrid.propTypes = {
+  category: PropTypes.string.isRequired,
 };
 
 export default GitGrid;

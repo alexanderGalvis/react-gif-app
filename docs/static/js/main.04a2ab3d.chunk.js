@@ -142,7 +142,7 @@
             c = e[1];
           return Object(a.jsxs)(a.Fragment, {
             children: [
-              Object(a.jsx)('h2', { children: 'GitExpertApp' }),
+              Object(a.jsx)('h2', { children: 'GifExpertApp' }),
               Object(a.jsx)(o, { setCategorias: c }),
               Object(a.jsx)('hr', {}),
               Object(a.jsx)('ol', {
